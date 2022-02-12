@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#F2141622">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/App_Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:padding="@dimen/_40sdp"
+        android:text="Criminal Identification App"
+        android:textColor="#D2DCD4D2"
+        android:textSize="@dimen/_25sdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:padding="@dimen/_10sdp"
+        android:id="@+id/circle_image_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/App_Name"
+        app:layout_constraintBottom_toTopOf="@id/md_bt_login"
+        android:layout_width="@dimen/_95sdp"
+        android:layout_height="@dimen/_95sdp"
+        android:src="@drawable/just"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:onClick="logIn"
+        app:backgroundTint="@color/teal_700"
+        android:textColor="#141622"
+        android:id="@+id/md_bt_login"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="@dimen/_60sdp"
+        android:layout_marginStart="@dimen/_60sdp"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:textStyle="bold"
+        android:textSize="@dimen/_18ssp"
+        android:textAllCaps="false"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/circle_image_view" />
+
+    <com.google.android.material.button.MaterialButton
+        android:onClick="Register"
+        android:id="@+id/md_bt_Sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:backgroundTint="@color/teal_700"
+        android:textColor="#141622"
+        android:textSize="@dimen/_18ssp"
+        android:textStyle="bold"
+        android:layout_marginEnd="@dimen/_75sdp"
+        android:layout_marginStart="@dimen/_75sdp"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/md_bt_login" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Admin"
+        app:backgroundTint="@color/teal_700"
+        android:textColor="#141622"
+        android:textStyle="bold"
+        android:textSize="@dimen/_18ssp"
+        android:layout_marginEnd="@dimen/_100sdp"
+        android:layout_marginStart="@dimen/_100sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/md_bt_Sign_up" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

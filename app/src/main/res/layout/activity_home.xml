@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="30"
+        android:orientation="vertical">
+        <de.hdodenhof.circleimageview.CircleImageView
+            app:civ_border_color="#3F51B5"
+            app:civ_border_width="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:src="@drawable/images"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            app:civ_border_color="#3F51B5"
+            app:civ_border_width="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:src="@drawable/ph"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            app:civ_border_color="#3F51B5"
+            app:civ_border_width="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:src="@drawable/crimnal"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            app:civ_border_color="#3F51B5"
+            app:civ_border_width="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:src="@drawable/update2"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            app:civ_border_color="#3F51B5"
+            app:civ_border_width="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:src="@drawable/hh"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            app:civ_border_color="#3F51B5"
+            app:civ_border_width="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:src="@drawable/profile"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="70"
+        android:orientation="vertical">
+        <com.google.android.material.button.MaterialButton
+            android:layout_marginTop="@dimen/_35sdp"
+            android:textSize="@dimen/_13sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search All"
+            android:textColor="#000"
+            android:textAllCaps="false"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:textSize="@dimen/_13sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search By Photo"
+            android:textColor="#000"
+            android:textAllCaps="false"
+            app:elevation="@dimen/_30sdp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:onClick="CriminalInfo"
+            android:textSize="@dimen/_13sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Criminal Info"
+            android:textColor="#000"
+            android:textAllCaps="false"
+            app:elevation="@dimen/_30sdp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update/View Criminal Info"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="#000"
+            android:textAllCaps="false"
+            app:elevation="@dimen/_30sdp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:onClick="adminInfo"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin Info"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="#000"
+            android:textAllCaps="false"
+            app:elevation="@dimen/_30sdp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:onClick="myProfile"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Profile"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="#000"
+            android:textAllCaps="false"
+            app:elevation="@dimen/_30sdp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            />
+        <com.google.android.material.button.MaterialButton
+           android:onClick="getSomeNews"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click to get SomeNews"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="#000"
+            android:textAllCaps="false"
+            app:elevation="@dimen/_30sdp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            />
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
